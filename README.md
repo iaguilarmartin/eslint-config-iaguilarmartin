@@ -1,6 +1,6 @@
 # eslint-config-iaguilarmartin
 
-This package provides `.eslintrc` as an extensible shared configuration. There are two different configurations available. The default one for vanilla javascript or Node applications and an specific for React applications.
+This package provides `.eslintrc` as an extensible shared configuration. There are two different configurations available. The default one for vanilla JavaScript or Node applications and an specific for React applications.
 
 ## Usage
 
