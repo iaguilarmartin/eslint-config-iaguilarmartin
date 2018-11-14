@@ -1,0 +1,49 @@
+{
+  "name": "eslint-config-iaguilarmartin",
+  "version": "1.0.0",
+  "description": "My personal ESLint configuration",
+  "main": "index.js",
+  "scripts": {
+    "eslint": "npm run eslint:base && npm run eslint:react",
+    "eslint:base": "eslint .",
+    "eslint:react": "eslint -c .react.eslintrc ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iaguilarmartin/eslint-config-iaguilarmartin.git"
+  },
+  "author": "Iván Aguilar Martín",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iaguilarmartin/eslint-config-iaguilarmartin/issues"
+  },
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "config",
+    "javascript",
+    "styleguide"
+  ],
+  "homepage": "https://github.com/iaguilarmartin/eslint-config-iaguilarmartin#readme",
+  "devDependencies": {
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.9.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-config-prettier": "^3.3.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.2",
+    "eslint-plugin-react": "^7.11.1"
+  },
+  "peerDependencies": {
+    "eslint": "^5.9.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-config-prettier": "^3.3.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.2",
+    "eslint-plugin-react": "^7.11.1",
+    "babel-eslint": "^10.0.1"
+  },
+  "dependencies": {}
+}
