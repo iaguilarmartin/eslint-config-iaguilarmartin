@@ -1,5 +1,7 @@
+const localRules = ['./rules/shared'].map(require.resolve);
+
 module.exports = {
-  extends: ['airbnb', 'prettier', 'prettier/react'],
+  extends: ['airbnb', 'prettier', 'prettier/react', ...localRules],
   parser: 'babel-eslint',
   parserOptions: {
     ecmaVersion: 2017,
@@ -12,12 +14,7 @@ module.exports = {
     }
   },
   rules: {
-    strict: 'error',
     'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx'] }],
     'no-unused-expressions': ['error', { allowTaggedTemplates: true }]
-  },
-  env: {
-    browser: true,
-    node: true
   }
 };
