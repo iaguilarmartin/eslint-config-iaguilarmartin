@@ -4,9 +4,10 @@
   "description": "My personal ESLint configuration",
   "main": "index.js",
   "scripts": {
-    "eslint": "npm run eslint:base && npm run eslint:react",
+    "eslint": "npm run eslint:base && npm run eslint:react && npm run eslint:jest",
     "eslint:base": "eslint .",
     "eslint:react": "eslint -c .react.eslintrc .",
+    "eslint:jest": "eslint -c .jest.eslintrc .",
     "release:major": "npm version major && npm publish && git push --follow-tags",
     "release:minor": "npm version minor && npm publish && git push --follow-tags",
     "release:patch": "npm version patch && npm publish && git push --follow-tags"
@@ -35,6 +36,7 @@
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-config-prettier": "^3.3.0",
     "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jest": "^22.0.1",
     "eslint-plugin-jsx-a11y": "^6.1.2",
     "eslint-plugin-react": "^7.11.1"
   },
@@ -44,6 +46,7 @@
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-config-prettier": "^3.3.0",
     "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jest": "^22.0.1",
     "eslint-plugin-jsx-a11y": "^6.1.2",
     "eslint-plugin-react": "^7.11.1",
     "babel-eslint": "^10.0.1"

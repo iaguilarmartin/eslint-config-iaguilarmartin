@@ -1,6 +1,6 @@
 # eslint-config-iaguilarmartin
 
-This package provides `.eslintrc` as an extensible shared configuration. There are two different configurations available. The default one for vanilla JavaScript or Node applications and an specific for React applications.
+This package provides `.eslintrc` as an extensible shared configuration. There are two different configurations available. The default one for vanilla JavaScript or Node applications and an specific for React applications. Additionaly there is a configuration specific for **jest** testing framework in case you want to implement tests in your project.
 
 ## Usage
 
@@ -46,5 +46,13 @@ For **React** applications:
 ```js
 {
   "extends": "iaguilarmartin/react"
+}
+```
+
+For **React** applications with **Jest** tests:
+
+```js
+{
+  "extends": ["iaguilarmartin/react", "iaguilarmartin/jest"]
 }
 ```
