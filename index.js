@@ -1,4 +1,4 @@
-const localRules = ['./shared'].map(require.resolve);
+const localRules = ['./rules/shared'].map(require.resolve);
 
 module.exports = {
   extends: ['airbnb-base', 'prettier', ...localRules]

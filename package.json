@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "eslint": "npm run eslint:base && npm run eslint:react && npm run eslint:jest",
-    "eslint:base": "eslint .",
-    "eslint:react": "eslint -c .react.eslintrc .",
-    "eslint:jest": "eslint -c .jest.eslintrc .",
+    "eslint:base": "eslint -c ./configs/.eslintrc .",
+    "eslint:react": "eslint -c ./configs/.react.eslintrc .",
+    "eslint:jest": "eslint -c ./configs/.jest.eslintrc .",
     "release:major": "npm version major && npm publish && git push --follow-tags",
     "release:minor": "npm version minor && npm publish && git push --follow-tags",
     "release:patch": "npm version patch && npm publish && git push --follow-tags"
