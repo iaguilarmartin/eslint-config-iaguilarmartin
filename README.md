@@ -44,7 +44,7 @@ yarn add -D eslint \
             eslint-plugin-import \
             eslint-plugin-jsx-a11y \
             eslint-plugin-react \
-            eslint-plugin-react-hooks \
+            eslint-plugin-react-hooks
 ```
 
 Create a **.eslintrc** file with the following content:
@@ -58,8 +58,8 @@ Create a **.eslintrc** file with the following content:
 Include the following scripts in your **package.json** file:
 
 ```json
-    "lint": "eslint ./",
-    "lint:fix": "eslint ./ --fix",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
 ```
 
 Create a **.prettierrc** file with this content:
@@ -98,7 +98,7 @@ yarn add -D eslint \
             eslint-config-prettier \
             eslint-plugin-prettier \
             eslint-plugin-jest \
-            eslint-plugin-import \
+            eslint-plugin-import
 ```
 
 Create a **.eslintrc** file with the following content:
